@@ -13,5 +13,12 @@ class App < Sinatra::Base
     "Hello #{@user_name}!"
   end
 
+  get "/goodbye/danny" do
+    "Goodbye danny"
+  end
+
+  get "/multiply/:num1/:num2" do
+    "25"
+  end
 
 end
