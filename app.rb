@@ -1,4 +1,5 @@
 require_relative 'config/environment'
+require 'pry'
 
 class App < Sinatra::Base
 
@@ -13,5 +14,15 @@ class App < Sinatra::Base
     "Hello #{@user_name}!"
   end
 
+  get '/goodbye/:name' do
+    @user_name = params[:name]
+    "Goodbye #{@user_name}"
+  end
+
+  get '/multiply/:num1/:num2' do 
+    @num_one = params[:num1].to_i
+    @num_two = params[:num2].to_i
+    "#{@num_one * @num_two}"
+  end
 
 end
