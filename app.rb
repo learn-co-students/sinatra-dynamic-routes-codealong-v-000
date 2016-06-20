@@ -1,11 +1,7 @@
 require_relative 'config/environment'
 
 class App < Sinatra::Base
-  all_the_medicines = [
-  <Medicine:0x007fb739b1af88 @id=1, @name="penicillin" @group="antibiotic">,
-  <Medicine:0x007fb739b1af88 @id=2, @name="advil" @group="anti-inflammatory">,
-  <Medicine:0x007fb739b1af88 @id=3, @name="benadryl" @group="anti-histamine">
-  ]
+
   # This is a sample static route.
   get '/hello' do
     "Hello World!"
@@ -23,6 +19,18 @@ class App < Sinatra::Base
       medicine.id == params[:id]
     end.first
     erb :'/medicines/show.html'
+  end
+
+  get '/goodbye/:name' do
+    @user_name = params[:name]
+    "Goodbye #{@user_name}"
+  end
+
+  get '/multiply/:num1/:num2' do
+    @numb1 = params[:num1].to_i
+    @numb2 = params[:num2].to_i
+    product = @numb1 * @numb2
+    product.to_s
   end
 
 
