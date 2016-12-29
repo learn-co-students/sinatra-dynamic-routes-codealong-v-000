@@ -24,6 +24,7 @@ class App < Sinatra::Base
   	status 200
   	@num_1 = params[:num1]
   	@num_2 = params[:num2]
+  	binding.pry
   	return @num_1.to_i * @num_2.to_i
   end
 
