@@ -13,5 +13,14 @@ class App < Sinatra::Base
     "Hello #{@user_name}!"
   end
 
+	get "/goodbye/:name" do
+    @user_name = params[:name]
+    "Goodbye #{@user_name}"
+  end
+
+	get "/multiply/:first/:last" do
+    @product = params[:first].to_i * params[:last].to_i
+    "#{@product}"
+  end
 
 end
