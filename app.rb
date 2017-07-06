@@ -22,6 +22,6 @@ class App < Sinatra::Base
       n1 = params[:num1].to_i
       n2 = params[:num2].to_i
 
-      answer = (n1 * n2).to_s
+      (n1 * n2).to_s
   end
 end
