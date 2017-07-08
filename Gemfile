@@ -7,6 +7,7 @@ gem 'thin'
 gem 'shotgun'
 gem 'require_all'
 gem 'pry'
+gem 'pry-rescue'
 
 group :test, :development do
   gem 'rspec'
