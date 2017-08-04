@@ -1,4 +1,5 @@
 require_relative 'config/environment'
+require 'pry'
 
 class App < Sinatra::Base
 
@@ -14,5 +15,26 @@ class App < Sinatra::Base
   end
 
   # Code your final two routes here:
+#   CREATE YOUR OWN DYNAMIC ROUTES
+# Using the example dynamic route that we included in 
+# the code-along as a template, create the following two routes:
+# get '/goodbye/:name, a dynamic route that returns "Goodbye, (person's name).", a string. 
+# For example, navigating to localhost:9393/goodbye/jerome should display Goodbye, jerome.
+# A dynamic route starting with /multiply that accepts two params 
+# (num1 and num2) and returns the product of the two numbers.
+
+  get "/goodbye/:name" do
+    @user_name = params[:name]
+    "Goodbye, #{@user_name}."
+  end
+
+  get "/multiply/:num1/:num2" do
+    #binding.pry
+    @num1 = params[:num1].to_i
+    @num2 = params[:num2].to_i
+    #  #{@num1 * @num2}"
+    #binding.pry
+    "#{@num1 * @num2}"
+  end
 
 end
