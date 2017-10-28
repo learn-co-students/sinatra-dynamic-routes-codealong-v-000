@@ -6,6 +6,7 @@ gem 'rake'
 gem 'thin'
 gem 'shotgun'
 gem 'require_all'
+gem 'eventmachine', '~> 1.2', '>= 1.2.5'
 
 group :test, :development do
   gem 'rspec'
