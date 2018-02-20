@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Sinatra Practice</title>
+      <style>
+        body {text-align: center;color: #ffffff;background-color:#ffffff;background-image:url(https://wallpapercave.com/wp/wp1923355.jpg); background-repeat:repeat-y; background-position:top left; background-attachment:scroll; margin: 0;}
+        h1 {;font-size: 5em;text-shadow: 0 0 50px #4BC6E2;margin-bottom: 0;}
+        p, a {;font-family: Georgia, serif;font-size: 33px;font-style: italic;font-weight: normal;color: #ffffff;background-color: rgba(27, 23, 23, 0.92);padding: 18px; margin-right: -4px;}
+        #sinatra {margin-bottom: .50em;}
+        form {display: inline-block;}
+        #form_field {margin: 10px;}
+        #form_label {font-size: 20px;}
+      </style>
+    </head>
+    <body>
+      <h1>Hello <%= params[:name] %>!</h1>
+      <p id="sinatra">Sinatra Practice</p>
+      
+      <!--home-->
+      <a style="color: #9adae9;font-size: 25px;" href="/">Home</a>
+      
+      <!--hello static-->
+      <a style="color: #9adae9;font-size: 25px;" href="/hello">Hello Static</a>
+      
+      <!--hello dynamic-->
+      <a style="color: #9adae9;font-size: 25px;" href="/hello/type-your-name-in-browser-above">Hello Dynamic</a>
+      
+      <!--goodbye dynamic-->
+      <a style="color: #9adae9;font-size: 25px;" href="/goodbye/type-your-name-in-browser-above">Goodbye Dynamic</a>
+      
+      <!--multiply dynamic-->
+      <a style="color: #9adae9;font-size: 25px;" href="/multiply/first-num/second-num">Multiply Dynamic</a>
+    </body>
+</html>
