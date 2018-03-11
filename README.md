@@ -45,9 +45,9 @@ Here's our array:
 
 ```ruby
 all_the_medicines = [ 
-  #<Medicine:0x007fb739b1af88 @id=1, @name="penicillin" @group="antibiotic">, 
-  #<Medicine:0x007fb739b1af88 @id=2, @name="advil" @group="anti-inflammatory">, 
-  #<Medicine:0x007fb739b1af88 @id=3, @name="benadryl" @group="anti-histamine">
+  #<Medicine:0x007fdc3087b4a0 @id=1, @name="penicillin" @group="antibiotic">, 
+  #<Medicine:0x007fdc3086a510 @id=2, @name="advil" @group="anti-inflammatory">, 
+  #<Medicine:0x007fdc30807118 @id=3, @name="benadryl" @group="anti-histamine">
 ]
 ```
 
