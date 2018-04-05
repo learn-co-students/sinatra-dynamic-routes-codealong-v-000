@@ -17,7 +17,14 @@ class App < Sinatra::Base
 
   get '/goodbye/:name' do
   @goodbye = params[:name]
-    "Goodbye,(person's name)."
-end
+    "Goodbye, #{@goodbye}."
+  end
+
+
+  get '/multiply/:num1/:num2' do
+  @spot_1 = params[:num1].to_i # we needed to change to interger
+  @spot_2 = params[:num2].to_i # we needed to change to interger
+   "#{@spot_1 * @spot_2}"  #=> 25...
+  end
 
 end
