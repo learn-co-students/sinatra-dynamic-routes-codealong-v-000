@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe 'app.rb' do
+puts describe 'app.rb' do
   describe 'GET /goodbye/:name' do
     it 'sends a 200 status code' do
       get '/goodbye/danny'
