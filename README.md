@@ -2,7 +2,9 @@
 
 ## Overview
 
-In this code-along lesson, we'll learn why dynamic routes are powerful and how to integrate them into a Sinatra project.
+In this code-along lesson, we'll learn why dynamic routes are powerful and how to integrate them into a Sinatra project.clear
+
+
 
 ## Objectives
 
